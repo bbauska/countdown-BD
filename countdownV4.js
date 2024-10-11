@@ -3,7 +3,7 @@ const countdownElementV4 = document.querySelector('#countdownV4');
 /**
  * Version 4 - With requestAnimationFrame + performance.now() + API
  */
-let today = Date.now() + 16;
+let today = Date.now() + (16 * DAY_IN_MILLISECONDS);
 
 const countdownV4 = () => {
   const currentTime = performance.now();
