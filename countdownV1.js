@@ -7,7 +7,7 @@ const countdownElementV1 = document.querySelector('#countdownV1');
  * - can be manipulated by changing system clock (affects Date.now())
  */
 const countdownV1 = () => {
-  const currentTime = Date.now() + MINUTE_IN_MILLISECONDS;
+  const currentTime = Date.now();
   const timeLeft = countdownTo - currentTime;
 
   if (timeLeft < 0) {
